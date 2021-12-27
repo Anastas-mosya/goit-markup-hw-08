@@ -1,4 +1,7 @@
 .work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   display: flex;
 }
 .work__item {
@@ -10,7 +13,6 @@
   }
 }
 .work__text {
-  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
