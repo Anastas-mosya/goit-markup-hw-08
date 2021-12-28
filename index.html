@@ -16,16 +16,28 @@
     
 </head>
 <body>
-    <header class="header">
+    <header class="header block">
         <div class="container header__container">
             <a href="/" class="logo logo__header ">
                 Web<span class="logo__black">Studio</span> </a>
-                <button type="button"class="btn__close"data-modal-close>
-                <svg class="button__icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-menu_40px"></use>
+                <!-- <button type="button"
+                        class="menu__btn is-open"
+                        aria-expanded="false"
+                        aria-controls="mobile__menu"
+                        js-menu-container>
+                <svg  
+                width="40" 
+                height="40"
+                aria-label="Переключатель мобильного меню">
+                    <use class="icon__menu"href="./images/icons.svg#icon-menu_40px"js-open-menu>
+                    </use>
+                   
+                        <use class="icon__cross"href="./images/icons.svg#icon-close_24px"js-close-menu>
+                        </use>
                 </svg>
                 </button>
-       <div class="mobile-menu is-open" data-modal>
+       <div class="mobile__menu is-open"
+            id="mobile__menu">
             <nav class="navigation">
                 <ul class="site-nav">
                     <li class="site-nav__item">
@@ -37,7 +49,7 @@
                     <li class="site-nav__item">
                         <a class=" site-nav__link" href="">Контакты</a>
                     </li>
-                </ul>
+                </ul> -->
             </nav>
             <ul class="contacts">
                 <li class="contacts__item">
@@ -58,24 +70,24 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
-            <ul>
+            <!-- <ul>
                 <li class="sayt__item">Instagram</li>
                 <li class="sayt__item">Twitter</li>
                 <li class="sayt__item">Facebook</li>
                 <li class="sayt__item">LinkedIn</li>
-            </ul>
+            </ul> -->
        </div>
         </div>
         </header>
     <main>
          <section class=" hero block">
-             <div class="container ">
+             <div class="container hero__container">
                 <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
                 <button class="btn"type="button" data-modal-open>Заказать услугу</button>
              </div>
         </section>
         <section class="section block">
-            <div class="container">
+            <div class="container ">
             <h2 class="visually-hidden">Особенности</h2>
             <ul class="features">
                
@@ -126,7 +138,7 @@
              </section>
         <section class="section section--no-padding-top block">
             <div class="container">
-            <h2 class="section__title">Чем мы занимаемся</h2>
+            <h2 class="section__title section__title--none">Чем мы занимаемся</h2>
             <ul class="work">
                 <li class="work__item">
                     <picture>
@@ -575,5 +587,10 @@
 
 
     <script src="./js/modal.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
