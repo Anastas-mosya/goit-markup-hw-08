@@ -16,71 +16,97 @@
     
 </head>
 <body>
-    <header class="header block">
-        <div class="container header__container">
-            <a href="/" class="logo logo__header ">
-                Web<span class="logo__black">Studio</span> </a>
-               
-        
-    <button type="button" class="open-menu__btn">
-        <svg class="open-menu__icon"width="40" height="40">
-            <use href="./images/icons.svg#icon-menu_40px">
-            </use>
-    </svg>
-          </button>
-        </div>
-    <div class="menu is-hidden">
-        <div class="container">
-            <div class="menu__top">
-        <button type="button" class="close-menu__btn">
-        <svg width="19" height="19">
-            <use class="close-menu__icon" href="./images/icons.svg#icon-close_24px" js-close-menu>
-            </use>
-        </svg>
-        </button>
-        <nav class="navigation">
-
-            <ul class="site-nav">
-                <li class="site-nav__item">
-                    <a class=" site-nav__link site-nav__link--color site-nav__link--current " href="">Студия</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class=" site-nav__link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class=" site-nav__link" href="">Контакты</a>
-                </li>
-            </ul>
-            </div> 
-            <div class="menu__bottom">
-            <ul class="contacts">
-                <li class="contacts__item"><a class="contacts__link" href="tel:+380961111111">
-                        <!-- <svg class="contacts__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-Vectorhover">
-                            </use>
-                        </svg> -->
-                        +38 096 111 11 11</a>
-                </li>
-                <li class="contacts__item">
-                    <a class="contacts__link contacts__link--color" href="mailto:info@devstudio.com">
-                        <!-- <svg class="contacts__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope1">
-                            </use>
-                        </svg> -->
-                        info@devstudio.com</a>
-                </li>
-            </ul>
-        </nav>
-        <ul class="sayt">
-                        <li class="sayt__item">Instagram</li>
-                        <li class="sayt__item">Twitter</li>
-                        <li class="sayt__item">Facebook</li>
-                        <li class="sayt__item">LinkedIn</li>
-         </ul> 
-        </div>
-    </div>
-    </div>
-        </div>
+        <header class="header block">
+            <div class="container header__container">
+                <nav class="header__navigation">
+                <a href="/" class="logo logo__header">
+                    Web<span class="logo__black">Studio</span> </a>
+                    <button class="header__btn" type="button">
+                        <svg class="header__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use href="./images/icons.svg#icon-close_24px"></use>
+                        </svg>
+                    </button>
+                    <ul class="header__list">
+                        <li class="header__item ">
+                            <a class="header__link header__link--active" href="">Студия</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="contacts">
+                        <li class="contacts__item ">
+                            <a class="contacts__link " href="">
+                                <svg class="contacts__icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-mail"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="contacts__item ">
+                            <a class="contacts__link " href="">
+                                <svg class="contacts__icon" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-tel"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" class="open-menu__btn">
+                    <svg class="open-menu__icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu__top">
+                        <button class="close-menu__btn">
+                            <svg class="close-menu__icon" width="19" height="19">
+                                <use href="./images/icons.svg#icon-close_24px" ></use>
+                            </svg>
+                        </button>
+                        <ul class="mob-menu__list">
+                            <li class="mob-menu__item ">
+                                <a class="mob-menu__link" href="">Студия</a>
+                            </li>
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link" href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu__bottom ">
+                        <ul class="connection">
+                            <li class="connection__item">
+                                <a class="connection__link" href="">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="connection__item connection__item--margin">
+                                <a class="connection__link connection__link--size " href="">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="sayt">
+                            <li class="sayt__item"> 
+                                <a class="sayt__link" href="">Instagram</a> 
+                            </li>
+                            <li class="sayt__item"> 
+                                <a class="sayt__link" href="">Twitter</a>
+                             </li>
+                            <li class="sayt__item">
+                                 <a class="sayt__link" href="">Facebook</a> 
+                                </li>
+                            <li class="sayt__item"> 
+                                <a class="sayt__link" href="">LinkedIn</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
     <main>
          <section class=" hero block">
@@ -591,9 +617,9 @@
 
     <script src="./js/modal.js"></script>
 
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
