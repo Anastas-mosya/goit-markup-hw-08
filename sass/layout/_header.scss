@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // justify-content: baseline;
+  justify-content: baseline;
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -21,8 +21,6 @@
 }
 .logo__header {
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 .header__list {
   & .header__item:not(:last-child) {
@@ -72,11 +70,11 @@
   }
 }
 
-.header__navigation {
-  display: flex;
-  align-items: center;
-  justify-content: baseline;
-}
+// .header__navigation {
+//   display: flex;
+//   align-items: center;
+//   justify-content: baseline;
+// }
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -84,19 +82,15 @@
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  margin-right: 0;
 }
 .logo__black {
-  color: #000;
-}
-.logo__header {
-  margin-right: 93px;
+  color: var(--header-text-color);
 }
 
 .header__btn {
   border: none;
   background-color: transparent;
-  display: inline-flex;
+  display: inline-block;
   padding: 0px;
   & {
     display: none;
@@ -132,7 +126,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: #2196f3;
+    background-color: var(--accent-color);
 
     content: '';
     position: absolute;
@@ -191,7 +185,7 @@
 
 .open-menu__icon:hover,
 .open-menu__icon:focus {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 .mob-menu {
   position: fixed;
@@ -237,7 +231,7 @@
 
 .mob-menu__link {
   font-family: Roboto;
-  color: #212121;
+  color: var(--header-text-color);
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
