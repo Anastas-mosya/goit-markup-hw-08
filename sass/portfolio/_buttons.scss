@@ -1,13 +1,17 @@
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
-
 .filter__item {
   display: block;
   &:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 

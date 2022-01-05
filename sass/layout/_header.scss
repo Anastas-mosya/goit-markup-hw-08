@@ -4,19 +4,13 @@
 }
 
 .header__navigation {
-  display: flex;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  justify-content: baseline;
-
+  width: 100%;
   @media screen and (min-width: 768px) {
-    display: inline-block;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
 }
 .logo__header {
