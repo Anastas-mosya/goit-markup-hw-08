@@ -35,20 +35,4 @@ body {
 a {
   text-decoration: none;
 }
-
-section {
-  display: none;
-}
-
-header {
-  display: none;
-}
-
-footer {
-  display: none;
-}
-
-.block {
-  display: block;
-}
 /*# sourceMappingURL=reset.css.map */
