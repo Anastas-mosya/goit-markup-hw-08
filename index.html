@@ -19,8 +19,8 @@
         <header class="header">
             <div class="container header__container">
                 <nav class="header__navigation">
-                <a href="/" class="logo logo__header">
-                    Web<span class="logo__black">Studio</span> </a>
+                <a href="/" class="logotip logotip__header">
+                    Web<span class="logotip__black">Studio</span> </a>
                     <button class="header__btn" type="button">
                         <svg class="header__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                             <use href="./images/icons.svg#icon-close_24px"></use>
@@ -61,7 +61,7 @@
                 </button>
             </div>
             <div class="mob-menu is-hidden">
-                <div class="container">
+        <div class="container">
                     <div class="mob-menu__top">
                         <button class="close-menu__btn">
                             <svg class="close-menu__icon" width="19" height="19">
@@ -70,7 +70,7 @@
                         </button>
                         <ul class="mob-menu__list">
                             <li class="mob-menu__item ">
-                                <a class="mob-menu__link" href="">Студия</a>
+                                <a class="mob-menu__link mob-menu__link--current" href="">Студия</a>
                             </li>
                             <li class="mob-menu__item">
                                 <a class="mob-menu__link" href="./portfolio.html">Портфолио</a>
@@ -106,13 +106,13 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+                </div>
         </header>
     <main>
          <section class="hero">
              <div class="container hero__container">
                 <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
-                <button class="btn"type="button" data-modal-open>Заказать услугу</button>
+                <button class="btn" type="button" data-modal-open> Заказать услугу</button>
              </div>
         </section>
         <section class="section">
@@ -173,8 +173,9 @@
                     <picture>
                         <source srcset="./images/work/img1.jpg 1x,
                                        ./images/work/img1-2x.jpg 2x "
-                                 media="(min-width: 1200px)">
-                       <img src="./images/work/img1-2x.jpg" alt="вёрстка" width="370" height="294" />
+                                 media="(min-width: 1200px)" 
+                                 type="image/jpeg" />
+                       <img src="./images/work/img1-2x.jpg" alt="вёрстка" />
                     </picture>
                     <p class="work__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                 </li>
@@ -182,8 +183,9 @@
                     <picture>
                         <source srcset="./images/work/img2.jpg 1x,
                                         ./images/work/img2-2x.jpg 2x " 
-                                media="(min-width: 1200px)">
-                        <img src="./images/work/img2-2x.jpg" alt="программа для телефона" width="370" height="294" />
+                                media="(min-width: 1200px)" 
+                                type="image/jpeg" />
+                        <img src="./images/work/img2-2x.jpg" alt="программа для телефона" />
                     </picture>
                     <p class="work__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                 </li>
@@ -191,8 +193,9 @@
                     <picture>
                         <source srcset="./images/work/img3.jpg 1x,
                                         ./images/work/img3-2x.jpg 2x "
-                                 media="(min-width: 1200px)">
-                        <img src="./images/work/img3-2x.jpg" alt="игра" width="370" height="294" />
+                                 media="(min-width: 1200px)"
+                                 type="image/jpeg"  />
+                        <img src="./images/work/img3-2x.jpg" alt="игра" />
                     </picture>
                     <p class="work__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                 </li>
@@ -205,21 +208,20 @@
             <ul class=" team">
                 <li class="team__item">
                     <picture>
-                        <source 
-                        srcset="./images/team/photo.img1-mob.jpg 1x,
-                                ./images/team/photo.img1-mob-2x.jpg 2x "
-                        media="(min-width: 480px)"
-                        >
+                        <source srcset="./images/team/photo.img1.jpg 1x,
+                                        ./images/team/photo.img1-2x.jpg 2x " 
+                                media="(min-width: 1200px)"
+                                type="image/jpeg" />
+                        
                         <source srcset="./images/team/photo.img1-tab.jpg 1x,
                                         ./images/team/photo.img1-tab-2x.jpg 2x "
-                         media="(min-width: 768px)"
-                         >
-                        <source srcset="./images/team/photo.img1.jpg 1x,
-                                        ./images/team/photo.img1-2x.jpg 2x "
-                         media="(min-width: 1200px)"
-                         >
+                                media="(min-width: 768px)" type="image/jpeg" />
+                        <source srcset="./images/team/photo.img1-mob.jpg 1x,
+                                        ./images/team/photo.img1-mob-2x.jpg 2x "
+                                 media="(min-width: 320px)"
+                                 type="image/jpeg" />
                         <img src="./images/team/photo.img1-mob-2x.jpg" 
-                             alt="фото"/>
+                             alt="фото Игорь"/>
                     </picture>
                    
                     <div class="team__thumb">
@@ -259,19 +261,19 @@
                 </li>
                     <li class="team__item">
                         <picture>
-                            <source srcset="./images/team/photo.img2-mob.jpg 1x,
-                                            ./images/team/photo.img2-mob-2x.jpg 2x "
-                                     media="(min-width: 480px)"
-                                     >
+                             <source srcset="./images/team/photo.img2.jpg 1x,
+                                             ./images/team/photo.img2-2x.jpg 2x "
+                                     media="(min-width: 1200px)"
+                                     type="image/jpeg" /> 
                             <source srcset="./images/team/photo.img2-tab.jpg 1x,
                                             ./images/team/photo.img2-tab-2x.jpg 2x "
-                                     media="(min-width: 768px)"
-                                     >
-                            <source srcset="./images/team/photo.img2.jpg 1x,
-                                            ./images/team/photo.img2-2x.jpg 2x " 
-                                    media="(min-width: 1200px)"
-                                    >
-                            <img src="./images/team/photo.img2-mob-2x.jpg" alt="фото"/>
+                                     media="(min-width: 768px)" type="image/jpeg" />
+                            
+                             <source srcset="./images/team/photo.img2-mob.jpg 1x,
+                                            ./images/team/photo.img2-mob-2x.jpg 2x " 
+                                     media="(min-width: 320px)"
+                                     type="image/jpeg" />
+                            <img src="./images/team/photo.img2-mob-2x.jpg" alt="фото Ольга"/>
                         </picture>
                   
                     <div class="team__thumb">
@@ -308,19 +310,20 @@
                 </li>
                 <li class="team__item">
                     <picture>
-                        <source srcset="./images/team/photo.img3-mob.jpg 1x,
-                                        ./images/team/photo.img3-mob-2x.jpg 2x " 
-                                media="(min-width: 480px)"
-                                >
-                        <source srcset="./images/team/photo.img3-tab.jpg 1x,
-                                       ./images/team/photo.img3-tab-2x.jpg 2x "
-                                media="(min-width: 768px)"
-                                >
                         <source srcset="./images/team/photo.img3.jpg 1x,
                                         ./images/team/photo.img3-2x.jpg 2x " 
                                 media="(min-width: 1200px)"
-                                >
-                        <img src="./images/team/photo.img3-mob-2x.jpg" alt="фото" />
+                                type="image/jpeg" />
+                        <source srcset="./images/team/photo.img3-tab.jpg 1x,
+                                       ./images/team/photo.img3-tab-2x.jpg 2x "
+                                media="(min-width: 768px)"
+                                 type="image/jpeg" />
+                                <source srcset="./images/team/photo.img3-mob.jpg 1x,
+                                                ./images/team/photo.img3-mob-2x.jpg 2x " 
+                                        media="(min-width: 320px)"
+                                        type="image/jpeg" />
+                          
+                        <img src="./images/team/photo.img3-mob-2x.jpg" alt="фото Николай" />
                     </picture>
                     
                     <div class="team__thumb">
@@ -357,19 +360,20 @@
                 </li>
                 <li class="team__item">
                     <picture>
-                        <source srcset="./images/team/photo.img4-mob.jpg 1x,
-                                        ./images/team/photo.img4-mob-2x.jpg 2x " 
-                                media="(min-width: 480px)"
-                                >
-                        <source srcset="./images/team/photo.img4-tab.jpg 1x,
-                                        ./images/team/photo.img4-tab-2x.jpg 2x " 
-                                media="(min-width: 768px)"
-                                >
                         <source srcset="./images/team/photo.img4.jpg 1x,
                                         ./images/team/photo.img4-2x.jpg 2x " 
                                 media="(min-width: 1200px)"
-                                >
-                        <img src="./images/team/photo.img4-mob-2x.jpg" alt="фото" />
+                               type="image/jpeg" />
+                        <source srcset="./images/team/photo.img4-tab.jpg 1x,
+                                        ./images/team/photo.img4-tab-2x.jpg 2x " 
+                                media="(min-width: 768px)"
+                                type="image/jpeg" />
+                                <source srcset="./images/team/photo.img4-mob.jpg 1x,
+                                                ./images/team/photo.img4-mob-2x.jpg 2x "
+                                         media="(min-width: 320px)"
+                                         type="image/jpeg" />
+                        
+                        <img src="./images/team/photo.img4-mob-2x.jpg" alt="фото Михаил" />
                     </picture>
                    
                     <div class="team__thumb">
@@ -408,9 +412,9 @@
             </ul>
             </div>
         </section>
-        <section class="work__section">
+        <section class="section work__section">
             <div class="container">
-          <h2 class="section__title">Постоянные клиенты</h2>
+          <h2 class=" section__title">Постоянные клиенты</h2>
           <ul class="client">
             <li class="client__item">
                 <a class="client__link" href="">
@@ -455,9 +459,9 @@
     
     <footer class="footer">
         <div class="container container--box">
-            <div class="logo">
-        <a href="/" class="logo">
-            Web<span class="logo__light">Studio</span> </a>
+            <div class="logo ">
+        <a href="/" class="logo ">
+            Web<span class="logotip__light">Studio</span> </a>
            <address class="logo__adress">
               
             <ul class="coordinates">
@@ -466,10 +470,10 @@
                         г. Киев, пр-т Леси Украинки, 26</a>
                 </li>
                 <li class="coordinates__item">
-                    <a class="coordinates__link coordinates__link--color"href="mailto:info@example.com">info@example.com</a>
+                    <a class="coordinates__link coordinates__link--color" href="mailto:info@example.com">info@example.com</a>
                 </li>
                 <li class="coordinates__item">
-                    <a class="coordinates__link coordinates__link--color"href="tel:+380991111111">+38 099 111 11 11</a>
+                    <a class="coordinates__link coordinates__link--color" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
             </ul>
             </address>
@@ -528,7 +532,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button"class="modal__close" data-modal-close>
+            <button type="button" class="modal__close" data-modal-close>
                 <svg class="modal-clous__icon" width="11" height="11">
                     <use href="./images/icons.svg#icon-VectorX">
                  </use>
@@ -547,7 +551,7 @@
                        required 
                        minlength="2"
                        />
-                    <svg class="input__icon" width="12"height="12">
+                    <svg class="input__icon" width="12" height="12">
                         <use href="./images/icons.svg#icon-name"></use>
                     </svg>
                     </div>
@@ -606,8 +610,8 @@
                                      <svg class="checkbox__icon" width="11" height="8">
                                     <use href="./images/icons.svg#icon-ok"></use>
                                 </svg>
-                            </span>Соглашаюсь с рассылкой и принимаю&nbsp<span class="checkbox__contract">
-                              <a href="#"class="checkbox__link"target="_blank">
+                            </span>Соглашаюсь с рассылкой и принимаю &nbsp <span class="checkbox__contract">
+                              <a href="#" class="checkbox__link" target="_blank">
                              Условия договора</a>
                             </span>
                             </label>

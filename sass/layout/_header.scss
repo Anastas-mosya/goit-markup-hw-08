@@ -13,7 +13,7 @@
     flex-wrap: nowrap;
   }
 }
-.logo__header {
+.logotip__header {
   display: flex;
 }
 .header__list {
@@ -27,12 +27,9 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: nowrap;
-    margin-left: 88px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-    margin-right: 84px;
     justify-content: space-between;
   }
 }
@@ -40,13 +37,17 @@
 .contacts {
   display: none;
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: block;
     margin-left: auto;
     align-items: center;
     flex-wrap: wrap;
   }
   @media screen and (max-width: 1199px) {
-    margin-left: 84px;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -64,21 +65,28 @@
   }
 }
 
-// .header__navigation {
-//   display: flex;
-//   align-items: center;
-//   justify-content: baseline;
-// }
-
-.logo {
+.logotip {
   font-family: Raleway, sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    text-align: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
-.logo__black {
+.logotip__black {
   color: var(--header-text-color);
+}
+.logotip__light {
+  color: var(--second-text-color);
 }
 
 .header__btn {
@@ -188,12 +196,14 @@
   width: 100vw;
   height: 100vh;
   z-index: 5;
-  padding-bottom: 48px;
+  padding: 11px, 25px, 48px, 40px;
+
   .container {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: scroll;
   }
   transform: translateX(100%);
   transition: 250mc cubic-bezier(0.4, 0, 0.2, 1);
@@ -201,12 +211,18 @@
     display: block;
   }
 }
+
 .mob-menu.is-open {
   transform: translateX(0);
+}
+.mob-menu__top {
+  margin-top: 48px;
+  margin-left: 40px;
 }
 .mob-menu__bottom {
   margin-top: auto;
   margin-left: 40px;
+  margin-bottom: 40px;
 }
 
 .close-menu__btn {
@@ -232,10 +248,8 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
-
-.mob-menu__top {
-  margin-top: 48px;
-  margin-left: 40px;
+.mob-menu__link--current {
+  color: var(--accent-color);
 }
 
 .mob-menu__item:not(:last-child) {

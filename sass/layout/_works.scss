@@ -1,13 +1,10 @@
-.work {
-  @media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
+  .section--no-padding-top {
     display: none;
   }
-  display: flex;
 }
-.section__title--none {
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
+.work {
+  display: flex;
 }
 .work__item {
   align-items: center;

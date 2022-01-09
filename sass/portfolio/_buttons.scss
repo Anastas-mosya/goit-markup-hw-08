@@ -2,16 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: -15px;
+
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 .filter__item {
   display: block;
+
   &:not(:last-child) {
     margin-right: 8px;
-    margin-bottom: 15px;
   }
 }
 
@@ -19,6 +26,7 @@
   border-style: none;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
+  margin-top: 15px;
 }
 .button {
   font-style: normal;
