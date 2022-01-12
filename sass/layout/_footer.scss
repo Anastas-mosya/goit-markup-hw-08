@@ -2,14 +2,8 @@
   padding: 60px 0px;
   background: var(--footer-background-color);
   text-align: center;
-  // @media screen and (max-width: 1199px) {
-  //   text-align: center;
-  // }
 }
 .container--box {
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
